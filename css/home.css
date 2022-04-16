@@ -1,0 +1,360 @@
+* {
+    scroll-behavior: smooth;
+}
+
+
+/* header*/
+
+.heading {
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    gap: 1rem;
+    padding-bottom: 10px;
+    background-color: #61462f;
+    color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: 500%;
+    background-size: 100%;
+}
+
+h1 {
+    margin-top: 1rem;
+    font-size: 250%;
+    font-weight: bolder;
+    backdrop-filter: blur(5px);
+    font-stretch: ultra-expanded;
+    align-self: flex-start;
+}
+
+body {
+    padding-bottom: 60em;
+    background: #ffffff;
+    margin: 0rem;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    transition: 0.2s;
+}
+
+
+/* navigation bar*/
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    background-color: rgb(156, 127, 82);
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.left {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    background-color: rgb(156, 127, 82);
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.right {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: visible;
+    background-color: rgb(156, 127, 82);
+    float: right;
+    justify-content: flex-end;
+    align-content: right;
+    margin-left: 550px;
+}
+
+.nav p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    float: left;
+    border-right: 1px;
+    display: block;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav a {
+    float: left;
+    border-right: 1px;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(88, 85, 55);
+}
+
+.nav a.active {
+    color: white;
+}
+
+.nav .icon {
+    display: none;
+}
+
+.places {
+    float: left;
+    overflow: visible;
+}
+
+.activities {
+    float: left;
+    overflow: visible;
+}
+
+.places .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.activities .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.nav a:hover,
+.places:hover .dropbtn {
+    background-color: black;
+    color: rgb(88, 85, 55);
+}
+
+.nav a:hover,
+.activities:hover .dropbtn {
+    background-color: black;
+    color: rgb(88, 85, 55);
+}
+
+.places-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(156, 127, 82);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.activities-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(156, 127, 82);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.places-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.activities-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.places-content a:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.activities-content a:hover {
+    background-color: black;
+}
+
+.places:hover .places-content {
+    display: block;
+}
+
+.activities:hover .activities-content {
+    display: block;
+}
+
+
+/* mid text*/
+
+.content {
+    margin-top: 35%;
+    text-align: flex;
+    font-family: 'Brush Script MT', cursive;
+    font-style: oblique;
+    font-size: 35px;
+}
+
+.flag {
+    align-items: center;
+    width: 500px;
+    border-left: 100px solid;
+    border-image: linear-gradient(to bottom, black 35%, white 20%, white 40%, red 30%, red 65%, white 10%, white 70%, green 30%) 8;
+    justify-content: flex-end;
+    padding-left: 50px;
+    margin: auto;
+}
+
+hr {
+    background-color: rgb(156, 127, 82);
+    padding: 0.1%;
+}
+
+
+/* cards*/
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.card-container {
+    padding: 2px 16px;
+    width: 80%;
+}
+
+h4 {
+    color: black;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+.row {
+    margin: 0 -5px;
+    border: 3px solid #fff;
+    /* padding: 20px; */
+    display: flex;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* our services*/
+
+h5 {
+    font-size: 150%;
+}
+
+.information {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    align-content: center;
+    font-size: 120%;
+    text-align: center;
+    padding-left: 3rem;
+}
+
+
+/* navigation submenu for places*/
+
+ul {
+    list-style-type: none;
+}
+
+li ul li {
+    float: left;
+    width: 100px;
+    height: 50px;
+    line-height: 30px;
+    background: rgb(156, 127, 82);
+}
+
+ul li {
+    position: relative;
+    display: none;
+}
+
+.places-content li:hover ul li {
+    display: block;
+}
+
+ul {
+    display: none;
+}
+
+.places-content li:hover ul {
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    left: 120px;
+    top: 0;
+}
+
+
+/* footer */
+
+
+/* footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    background-color: black;
+} */
