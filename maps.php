@@ -9,7 +9,6 @@ include 'header.php';
 </head>
 
 <body>
-<input id="search-input" class="controls" type="text" placeholder="Search Box"/>
 
     <div class="map-responsive">
         <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1MLVBITv9h_tnIgriqGo_yRssldeF4423&ehbc=2E312F" width="640" height="480">

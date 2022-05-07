@@ -19,7 +19,7 @@ if (isset($_POST['submit'])){
     }
 
     loginUser($conn, $email, $password);
-    isAdmin($conn, $email, $password, $user_level);
+    //isAdmin($conn, $email, $password, $user_level); 
 }
 else{
     header("location: ../login.php");

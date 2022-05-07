@@ -107,10 +107,16 @@
     <div class="right">
     <?php
         if(isset($_SESSION["firstname"])){
+            if($_SESSION["firstname"]==='Admin'){
+                echo "<p>Hello " .$_SESSION["lastname"]. "!</p>";
+                echo "<a href='admin\dashboard.php'>Admin Panel</a>";
+                echo "<a href='includes\logout.inc.php'>Log Out</a>";
+            }else{
             echo "<p>Hello " .$_SESSION["firstname"]. "!</p>";
             echo "<a href='profile.php'>Profile Page</a>";
-            echo "<a href='includes\logout.inc.php'>Log Out</a>";
+            echo "<a href='includes\logout.inc.php'>Log Out</a>";}
         }
+        
         else{
             echo "<a href='login.php'>Log in</a>";
             echo "<a href='signup.php'>Create Account</a>";

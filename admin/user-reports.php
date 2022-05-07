@@ -166,10 +166,12 @@
 	</header>
 
 		<div class="app-body-main-content">
+        <link rel="stylesheet" href="../css/crud.css" type="text/css">
 
                 <a href="../signup.php"><button class="button-add">Add User</button></a>
 
 	            <div class='tbl-header'>
+                
 	              <table cellpadding='0' cellspacing='0' border='0'>
                    <thead>
                     <p>CURRENT USERS</p>
@@ -190,6 +192,7 @@
             $query_run = mysqli_query($conn,$stmt);
             if(mysqli_num_rows($query_run)>0){
               foreach($query_run as $row){
+              $email = $row['Email'];
               echo"
               <table cellpadding='0' cellspacing='0' border='0'>
               <tbody>
@@ -198,14 +201,19 @@
                    <td>" . $row['LastName'] . "</td>
                    <td>" . $row['Email'] . "</td>
                    <td>" . $row['PhoneNumber'] . "</td>
-                   <td></td>
+                   <td>
+                   <a href='update.php?update=".$email."' ><button class='button-update'>Update</button></a>
+                   <a href='delete.php?delete=".$email."' ><button class='button-delete'>Delete</button></a>
+                   </td>
                </tr>
-              </tbody>
-            </table>";
+               </tbody>
+            </table>
+              ";
               }
             }
            ?>
-			
+           
+	
 		</div>
 	
 </div>

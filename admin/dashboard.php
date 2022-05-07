@@ -109,8 +109,8 @@
 
     <div class="right">
     <?php
-        if(isset($_SESSION["firstname"])){
-            echo "<p>Hello " .$_SESSION["firstname"]. "!</p>";
+        if($_SESSION["firstname"]==='Admin'){
+            echo "<p>Hello " .$_SESSION["lastname"]. "!</p>";
             echo "<a href='dashboard.php'>Admin Panel</a>";
             echo "<a href='../includes/logout.inc.php'>Log Out</a>";
         }

@@ -172,8 +172,3 @@ a {
 .user-profile:focus {
     color: #ffffff;
 }
-
-.button-add {
-    background-color: rgb(41, 71, 35);
-    color: black;
-}

@@ -1,0 +1,20 @@
+.button-add {
+    background-color: rgb(88, 116, 82);
+    color: black;
+    border-radius: 2px;
+    text-decoration-line: none;
+}
+
+.button-update {
+    background-color: rgb(88, 116, 82);
+    color: black;
+    border-radius: 2px;
+    size: 12px;
+}
+
+.button-delete {
+    background-color: rgb(88, 116, 82);
+    color: black;
+    border-radius: 2px;
+    text-decoration-line: none;
+}
