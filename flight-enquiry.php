@@ -12,7 +12,7 @@ include 'header.php';
 			<h2 class="sub-heading">Booking Details</h2>
 			<div class="main-flex">
 				<div class="field-spc form-text1">
-					<select class="form-control">
+					<select class="form-control" name="FromAirport">
 										<option>From</option>
 										<option value="JKIA">Nairobi - Jomo Kenyatta International Airport</option>
 										<option value="WIL">Nairobi - Wilson</option>
@@ -20,7 +20,7 @@ include 'header.php';
 									</select>
 				</div>
 				<div class="field-spc form-text2">
-					<select class="form-control" >
+					<select class="form-control" name="ToAirport">
 										<option>To</option>
 										<option value="ASV">Amboseli - Amboseli Airport</option>
 										<option value="UKA">Ukunda - Ukunda Airport</option>
@@ -40,7 +40,7 @@ include 'header.php';
 			</div>
 			<div class="main-flex">
 				<div class="field-spc form-text1">
-					<select class="form-control">
+					<select class="form-control" id="airline" name="Airline">
 										<option>Preferred Airline</option>
 										<option value="AirKenya Express">AirKenya Express</option>
 										<option value="Fly 540">Fly 540</option>
@@ -50,7 +50,7 @@ include 'header.php';
 									</select>
 				</div>
 				<div class="field-spc form-text2">
-					<select class="form-control">
+					<select class="form-control" name="Seating">
 										<option>Preferred Seating</option>
 										<option value="Window">Window</option>
 										<option value="Aisle">Aisle</option>
@@ -60,72 +60,41 @@ include 'header.php';
 			<div class="main-flex">
 				<div class="field-spc form-text1">
                     <p>Depature date</p>
-					<input id="datepicker" name="Text" type="date" placeholder="Departure Date"required="" class="hasDatepicker">
+					<input id="datepicker" name="DepartureDate" type="date" placeholder="Departure Date"required="" class="hasDatepicker">
 				</div>
                 <div class="field-spc form-text1">
                     <p>Return date</p>
-					<input id="datepicker" name="Text" type="date" placeholder="Return Date" required="" class="hasDatepicker">
+					<input id="datepicker" name="ReturnDate" type="date" placeholder="Return Date" class="hasDatepicker">
 				</div>
 			</div>
-
-			<div class="triple">
-				<div class="field-spc form-text11">
-					<select class="form-control">
-												<option value="">Adult(12+ Yrs)</option>
+			<div class="field-spc form-text2">
+					<select class="form-control" name="Fare">
+										<option>Fare</option>
+										<option value="Window">One Way</option>
+										<option value="Aisle">Round-Trip</option>
+									</select>
+</div>
+<div class="field-spc form-text22">
+					<select class="form-control" name="Tickets">
+												<option value="">Number of Tickets</option>
 												<option value="1">1</option>
 												<option value="2">2</option>
 												<option value="3">3</option>         
 												<option value="4">4</option>
-												<option value="5">5+</option>
+												<option value="5">5</option>     
 											</select>
 				</div>
-				<div class="field-spc form-text22">
-					<select class="form-control">
-												<option value="">Children(2-11 Yrs)</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>         
-												<option value="4">4</option>
-												<option value="5">5+</option>     
-											</select>
+			<div class="field-spc form-text1" id="price">
+					<input id="pricepicker" name="Price" type="currency" placeholder="Total Price" required="" class="hasPricepicker">
 				</div>
-				<div class="field-spc form-text33">
-					<select class="form-control">
-												<option value="">Infant(under 2Yrs)</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>         
-												<option value="4">4</option>
-												<option value="5">5+</option>    
-											</select>
-				</div>
-			</div>
-			<div class="radio-section">
-				<h6>Select your Fare:</h6>
-				<ul class="radio-buttons">
-					<li>
-						<input type="radio" id="a-option" name="selector1">
-						<label for="a-option">One Way</label>
-						<div class="check"></div>
-					</li>
-					<li>
-						<input type="radio" id="b-option" name="selector1">
-						<label for="b-option">Round-Trip</label>
-						<div class="check">
-							<div class="inside"></div>
-						</div>
-					</li>
-				</ul>
-				<div class="clear"></div>
-			</div>
 
 			<h3 class="sub-heading">Personal Details</h3>
 			<div class="main-flex">
 				<div class="field-spc form-text1">
-					<input type="text" name="Name" placeholder="Full Name" required="">
+					<input type="text" name="FullName" placeholder="Full Name" required="">
 				</div>
 				<div class="field-spc form-text2">
-					<input type="text" name="Phone no" placeholder="Phone Number" required="">
+					<input type="text" name="PhoneNumber" placeholder="Phone Number" required="">
 				</div>
 			</div>
 			<div class="field-spc form-text">
@@ -137,3 +106,6 @@ include 'header.php';
 			<div class="clear"></div>
 		</form>
 	</div>
+	<script src="scripts\bookings.js"></script>
+</body>
+</html>

@@ -16,10 +16,10 @@
 
                 <div class="container">
                     <label for="email"><b>Email<span class="required">*</span></b></label>
-                    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                    <input type="text" placeholder="Enter Email" name="email" id="email" autocomplete="off" required>
 
                     <label for="psw"><b>Password<span class="required">*</span></b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" id="myInput" required>
+                    <input type="password" placeholder="Enter Password" name="psw" id="myInput" autocomplete="off" required>
                     <input type="checkbox" onclick="myFunction()"> Show Password
 
                     <button type="submit" name="submit">Login</button>
@@ -54,6 +54,7 @@
 
     }
     ?>
+    
 </section>
     <script src="scripts\login.js"></script>
 </body>

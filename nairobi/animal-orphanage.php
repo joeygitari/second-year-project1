@@ -96,7 +96,7 @@
 </div>
 <div class="information">
         <h2>The Nairobi Animal Orphanage</h2>
-        <p>TThe Nairobi Animal Orphanage is located in the Nairobi National Park. It serves a treatments and rehabilitation centre for wild animals. The Orphanage hosts lions, cheetahs, hyenas, jackals, serval cats, rare Sokoke cats, warthogs, leopards, various monkeys, baboons and buffalo. Various birds can also be viewed including parrots, guinea fowls, crowned cranes and ostriches. -KWS
+        <p>The Nairobi Animal Orphanage is located in the Nairobi National Park. It serves a treatments and rehabilitation centre for wild animals. The Orphanage hosts lions, cheetahs, hyenas, jackals, serval cats, rare Sokoke cats, warthogs, leopards, various monkeys, baboons and buffalo. Various birds can also be viewed including parrots, guinea fowls, crowned cranes and ostriches. -KWS
         </p>
         <p>The Nairobi Animal Orphanage's Official Website: <a href="http://www.kws.go.ke/content/nairobi-animal-orphanage-0">Nairobi Animal Orphanage Website</a></p>
 </div>

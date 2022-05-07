@@ -2,13 +2,13 @@
 include 'header.php';
 ?>
 
-<link rel="stylesheet" href="css\flights-enquiry.css" type="text/css">
+<link rel="stylesheet" href="css/flights-enquiry.css" type="text/css">
 <title>Accommodation Enquiry Form</title>
 
 
 <div class="booking-form">
 		
-		<form action="includes\accommodation.inc.php" method="post">
+		<form action="includes/accommodation.inc.php" method="post">
 			<h2 class="sub-heading">Accommodation Booking Details</h2>
 			<div class="main-flex">
 				<div class="field-spc form-text1">
@@ -68,7 +68,11 @@ include 'header.php';
 				</div>
 			</div>
 			
-			
+			<div class="field-spc form-text2">
+				<select class="price" id="price" name="Price">
+										<option>Total Amount in KSHS</option>
+               </select>
+				</div>
 
 			<h3 class="sub-heading">Personal Details</h3>
 			<div class="main-flex">
@@ -89,4 +93,6 @@ include 'header.php';
 		</form>
 	</div>
 
-	<script src="scripts\bookings.js"></script>
+	<script src="scripts/bookings.js"></script>
+</body>
+</html>

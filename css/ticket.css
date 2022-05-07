@@ -1,0 +1,111 @@
+.box {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+
+.ticket {
+    width: 600px;
+    height: 250px;
+    background: #216143;
+    border-radius: 3px;
+    box-shadow: 0 0 100px #aaa;
+    border-top: 1px solid #3d3933;
+    border-bottom: 1px solid #5a4c3a;
+}
+
+.flight-content {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    height: 170px;
+    background: #eee;
+}
+
+.airline {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(43, 37, 25);
+}
+
+.boarding {
+    position: absolute;
+    top: 10px;
+    right: 260px;
+    font-family: Arial;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.plane {
+    position: absolute;
+    left: 105px;
+    top: 0px;
+}
+
+.flight-sub-content {
+    background: #e5e5e5;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+}
+
+.watermark {
+    position: absolute;
+    left: 5px;
+    top: -10px;
+    font-family: Arial;
+    font-size: 110px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.name {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-family: Arial Narrow, Arial;
+    font-weight: bold;
+    font-size: 14px;
+    color: #999;
+}
+
+.name span {
+    color: #555;
+    font-size: 17px;
+}
+
+.flight {
+    position: absolute;
+    top: 10px;
+    left: 180px;
+    font-family: Arial Narrow, Arial;
+    font-weight: bold;
+    font-size: 14px;
+    color: #999;
+}
+
+.flight span {
+    color: #555;
+    font-size: 17px;
+}
+
+.boardingtime {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    font-family: Arial Narrow, Arial;
+    font-weight: bold;
+    font-size: 14px;
+    color: #999;
+}
+
+.boardingtime span {
+    color: #555;
+    font-size: 17px;
+}

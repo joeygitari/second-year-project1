@@ -16,19 +16,19 @@
         <form action="includes\signup.inc.php" method="post" class="form" id="form">
             <div class="container">
                 <label for="fname"><b>First Name<span class="required">*</span></b></label>
-                <input type="text" placeholder="Enter first name" name="fname" required>
+                <input type="text" placeholder="Enter first name" name="fname" autocomplete="off" required>
 
                 <label for="lname"><b>Last Name<span class="required">*</span></b></label>
-                <input type="text" placeholder="Enter last name" name="lname" required>
+                <input type="text" placeholder="Enter last name" name="lname" autocomplete="off" required>
 
                 <label for="email"><b>Email<span class="required">*</span></b></label>
-                <input type="text" placeholder="Enter email" name="email" required>
+                <input type="text" placeholder="Enter email" name="email" autocomplete="off" required>
 
                 <label for="pnum"><b>Phone number</b></label>
-                <input type="text" placeholder="Enter phone number" name="pnum">
+                <input type="text" placeholder="Enter phone number" name="pnum" autocomplete="off">
 
                 <label for="psw"><b>Password<span class="required">*</span></b></label>
-                <input type="password" placeholder="Enter Password" name="psw" id="myInput" required>
+                <input type="password" placeholder="Enter Password" name="psw" id="myInput" autocomplete="off" required>
                 <input type="checkbox" onclick="myFunction()"> Show Password
 
                 <button type="submit" name="submit">Create</button>

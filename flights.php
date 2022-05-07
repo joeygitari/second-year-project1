@@ -28,9 +28,9 @@ include 'header.php';
 											</div>
 											<div class="entry-2">
 												<ul>
-													<li><i class="fa-solid fa-plane-departure"></i><a href="#"> WIL</a></li>
-													<li><i class="fa-solid fa-plane-arrival"></i><a href="#"> KTJ</a></li>
-													<li><i class="fa-solid fa-plane"></i><a href="#"> AirKenya Express</a></li>
+													<li><i class="fas fa-plane-departure"></i><a href="#"> WIL</a></li>
+													<li><i class="fas fa-plane-arrival"></i><a href="#"> KTJ</a></li>
+													<li><i class="fas fa-plane"></i><a href="#"> AirKenya Express</a></li>
 												</ul>
 											</div>
 											<div class="entry-content">
@@ -39,14 +39,14 @@ include 'header.php';
 										</div>
 										<div class="col-lg-auto">
 											<div class="price1">
-                                            <i class="fa-solid fa-coins"></i>KSHS 16,610 
+                                            <i class="fas fa-coins"></i>KSHS 16,610 
 											</div>
 											<small><em>Per person, One Way*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
 										</div>
 										<div class="col-lg-auto">
 											<div class="price2">
-                                             <i class="fa-solid fa-coins"></i>KSHS 33,220
+                                             <i class="fas fa-coins"></i>KSHS 33,220
 											</div>
 											<small><em>Per person, Return*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
@@ -80,14 +80,14 @@ include 'header.php';
 										</div>
 										<div class="col-lg-auto">
 											<div class="price1">
-                                            <i class="fa-solid fa-coins"></i>KSHS 16,264
+                                            <i class="fas fa-coins"></i>KSHS 16,264
 											</div>
 											<small><em>Per person, One Way*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
 										</div>
 										<div class="col-lg-auto">
 											<div class="price2">
-                                             <i class="fa-solid fa-coins"></i>KSHS 40,487
+                                             <i class="fas fa-coins"></i>KSHS 40,487
 											</div>
 											<small><em>Per person, Return*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
@@ -121,14 +121,14 @@ include 'header.php';
 										</div>
 										<div class="col-lg-auto">
 											<div class="price1">
-                                            <i class="fa-solid fa-coins"></i>KSHS 28,912
+                                            <i class="fas fa-coins"></i>KSHS 28,912
 											</div>
 											<small><em>Per person, One Way*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
 										</div>
 										<div class="col-lg-auto">
 											<div class="price2">
-                                             <i class="fa-solid fa-coins"></i>KSHS 45,980
+                                             <i class="fas fa-coins"></i>KSHS 45,980
 											</div>
 											<small><em>Per person, Return*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
@@ -162,14 +162,14 @@ include 'header.php';
 										</div>
 										<div class="col-lg-auto">
 											<div class="price1">
-                                            <i class="fa-solid fa-coins"></i>KSHS 28,897
+                                            <i class="fas fa-coins"></i>KSHS 28,897
 											</div>
 											<small><em>Per person, One Way*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
 										</div>
 										<div class="col-lg-auto">
 											<div class="price2">
-                                             <i class="fa-solid fa-coins"></i>KSHS 40,487.85
+                                             <i class="fas fa-coins"></i>KSHS 40,487.85
 											</div>
 											<small><em>Per person, Return*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
@@ -203,14 +203,14 @@ include 'header.php';
 										</div>
 										<div class="col-lg-auto">
 											<div class="price1">
-                                            <i class="fa-solid fa-coins"></i>KSHS 30,585
+                                            <i class="fas fa-coins"></i>KSHS 30,585
 											</div>
 											<small><em>Per person, One Way*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
 										</div>
 										<div class="col-lg-auto">
 											<div class="price2">
-                                             <i class="fa-solid fa-coins"></i>KSHS 46,748
+                                             <i class="fas fa-coins"></i>KSHS 46,748
 											</div>
 											<small><em>Per person, Return*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
@@ -244,14 +244,14 @@ include 'header.php';
 										</div>
 										<div class="col-lg-auto">
 											<div class="price1">
-                                            <i class="fa-solid fa-coins"></i>KSHS 26,489
+                                            <i class="fas fa-coins"></i>KSHS 26,489
 											</div>
 											<small><em>Per person, One Way*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
 										</div>
 										<div class="col-lg-auto">
 											<div class="price2">
-                                             <i class="fa-solid fa-coins"></i>KSHS 54,118
+                                             <i class="fas fa-coins"></i>KSHS 54,118
 											</div>
 											<small><em>Per person, Return*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
@@ -289,14 +289,14 @@ include 'header.php';
 										</div>
 										<div class="col-lg-auto">
 											<div class="price1">
-                                            <i class="fa-solid fa-coins"></i>KSHS 26,471
+                                            <i class="fas fa-coins"></i>KSHS 26,471
 											</div>
 											<small><em>Per person, One Way*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
 										</div>
 										<div class="col-lg-auto">
 											<div class="price2">
-                                             <i class="fa-solid fa-coins"></i>KSHS 48,777
+                                             <i class="fas fa-coins"></i>KSHS 48,777
 											</div>
 											<small><em>Per person, Return*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
@@ -331,14 +331,14 @@ include 'header.php';
 										</div>
 										<div class="col-lg-auto">
 											<div class="price1">
-                                            <i class="fa-solid fa-coins"></i>KSHS 11,648
+                                            <i class="fas fa-coins"></i>KSHS 11,648
 											</div>
 											<small><em>Per person, One Way*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
 										</div>
 										<div class="col-lg-auto">
 											<div class="price2">
-                                             <i class="fa-solid fa-coins"></i>KSHS 18,229
+                                             <i class="fas fa-coins"></i>KSHS 18,229
 											</div>
 											<small><em>Per person, Return*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
@@ -374,14 +374,14 @@ include 'header.php';
 										</div>
 										<div class="col-lg-auto">
 											<div class="price1">
-                                            <i class="fa-solid fa-coins"></i>KSHS 11,648
+                                            <i class="fas fa-coins"></i>KSHS 11,648
 											</div>
 											<small><em>Per person, One Way*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
 										</div>
 										<div class="col-lg-auto">
 											<div class="price2">
-                                             <i class="fa-solid fa-coins"></i>KSHS 18,229
+                                             <i class="fas fa-coins"></i>KSHS 18,229
 											</div>
 											<small><em>Per person, Return*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
@@ -418,14 +418,14 @@ include 'header.php';
 										</div>
 										<div class="col-lg-auto">
 											<div class="price1">
-                                            <i class="fa-solid fa-coins"></i>KSHS 12,931
+                                            <i class="fas fa-coins"></i>KSHS 12,931
 											</div>
 											<small><em>Per person, One Way*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
 										</div>
 										<div class="col-lg-auto">
 											<div class="price2">
-                                             <i class="fa-solid fa-coins"></i>KSHS 20,692
+                                             <i class="fas fa-coins"></i>KSHS 20,692
 											</div>
 											<small><em>Per person, Return*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
@@ -461,14 +461,14 @@ include 'header.php';
 										</div>
 										<div class="col-lg-auto">
 											<div class="price1">
-                                            <i class="fa-solid fa-coins"></i>KSHS 11,581
+                                            <i class="fas fa-coinss"></i>KSHS 11,581
 											</div>
 											<small><em>Per person, One Way*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
 										</div>
 										<div class="col-lg-auto">
 											<div class="price2">
-                                             <i class="fa-solid fa-coins"></i>KSHS 18,229
+                                             <i class="fas fa-coins"></i>KSHS 18,229
 											</div>
 											<small><em>Per person, Return*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
@@ -504,14 +504,14 @@ include 'header.php';
 										</div>
 										<div class="col-lg-auto">
 											<div class="price1">
-                                            <i class="fa-solid fa-coins"></i>KSHS 12,593
+                                            <i class="fas fa-coins"></i>KSHS 12,593
 											</div>
 											<small><em>Per person, One Way*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
 										</div>
 										<div class="col-lg-auto">
 											<div class="price2">
-                                             <i class="fa-solid fa-coins"></i>KSHS 20,692
+                                             <i class="fas fa-coins"></i>KSHS 20,692
 											</div>
 											<small><em>Per person, Return*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
@@ -547,14 +547,14 @@ include 'header.php';
 										</div>
 										<div class="col-lg-auto">
 											<div class="price1">
-                                            <i class="fa-solid fa-coins"></i>KSHS 11,581
+                                            <i class="fas fa-coins"></i>KSHS 11,581
 											</div>
 											<small><em>Per person, One Way*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
 										</div>
 										<div class="col-lg-auto">
 											<div class="price2">
-                                             <i class="fa-solid fa-coins"></i>KSHS 20,692
+                                             <i class="fas fa-coins"></i>KSHS 20,692
 											</div>
 											<small><em>Per person, Return*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
@@ -591,14 +591,14 @@ include 'header.php';
 										</div>
 										<div class="col-lg-auto">
 											<div class="price1">
-                                            <i class="fa-solid fa-coins"></i>KSHS 13,791
+                                            <i class="fas fa-coins"></i>KSHS 13,791
 											</div>
 											<small><em>Per person, One Way*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
 										</div>
 										<div class="col-lg-auto">
 											<div class="price2">
-                                             <i class="fa-solid fa-coins"></i>KSHS 24,201
+                                             <i class="fas fa-coins"></i>KSHS 24,201
 											</div>
 											<small><em>Per person, Return*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
@@ -634,14 +634,14 @@ include 'header.php';
 										</div>
 										<div class="col-lg-auto">
 											<div class="price1">
-                                            <i class="fa-solid fa-coins"></i>KSHS 9,911
+                                            <i class="fas fa-coins"></i>KSHS 9,911
 											</div>
 											<small><em>Per person, One Way*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
 										</div>
 										<div class="col-lg-auto">
 											<div class="price2">
-                                             <i class="fa-solid fa-coins"></i>KSHS 16,440
+                                             <i class="fas fa-coins"></i>KSHS 16,440
 											</div>
 											<small><em>Per person, Return*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
@@ -678,14 +678,14 @@ include 'header.php';
 										</div>
 										<div class="col-lg-auto">
 											<div class="price1">
-                                            <i class="fa-solid fa-coins"></i>KSHS 22,834
+                                            <i class="fas fa-coins"></i>KSHS 22,834
 											</div>
 											<small><em>Per person, One Way*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
 										</div>
 										<div class="col-lg-auto">
 											<div class="price2">
-                                             <i class="fa-solid fa-coins"></i>KSHS 45,584
+                                             <i class="fas fa-coins"></i>KSHS 45,584
 											</div>
 											<small><em>Per person, Return*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
@@ -721,14 +721,14 @@ include 'header.php';
 										</div>
 										<div class="col-lg-auto">
 											<div class="price1">
-                                            <i class="fa-solid fa-coins"></i>KSHS 22,834
+                                            <i class="fas fa-coins"></i>KSHS 22,834
 											</div>
 											<small><em>Per person, One Way*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
 										</div>
 										<div class="col-lg-auto">
 											<div class="price2">
-                                             <i class="fa-solid fa-coins"></i>KSHS 31,327
+                                             <i class="fas fa-coins"></i>KSHS 31,327
 											</div>
 											<small><em>Per person, Return*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
@@ -764,14 +764,14 @@ include 'header.php';
 										</div>
 										<div class="col-lg-auto">
 											<div class="price1">
-                                            <i class="fa-solid fa-coins"></i>KSHS 16,943
+                                            <i class="fas fa-coins"></i>KSHS 16,943
 											</div>
 											<small><em>Per person, One Way*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
 										</div>
 										<div class="col-lg-auto">
 											<div class="price2">
-                                             <i class="fa-solid fa-coins"></i>KSHS 28,040
+                                             <i class="fas fa-coins"></i>KSHS 28,040
 											</div>
 											<small><em>Per person, Return*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
@@ -807,14 +807,14 @@ include 'header.php';
 										</div>
 										<div class="col-lg-auto">
 											<div class="price1">
-                                            <i class="fa-solid fa-coins"></i>KSHS 17,061
+                                            <i class="fas fa-coins"></i>KSHS 17,061
 											</div>
 											<small><em>Per person, One Way*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
 										</div>
 										<div class="col-lg-auto">
 											<div class="price2">
-                                             <i class="fa-solid fa-coins"></i>KSHS 33,290
+                                             <i class="fas fa-coins"></i>KSHS 33,290
 											</div>
 											<small><em>Per person, Return*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
@@ -850,14 +850,14 @@ include 'header.php';
 										</div>
 										<div class="col-lg-auto">
 											<div class="price1">
-                                            <i class="fa-solid fa-coins"></i>KSHS 11,449
+                                            <i class="fas fa-coins"></i>KSHS 11,449
 											</div>
 											<small><em>Per person, One Way*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
 										</div>
 										<div class="col-lg-auto">
 											<div class="price2">
-                                             <i class="fa-solid fa-coins"></i>KSHS 18,174
+                                             <i class="fas fa-coins"></i>KSHS 18,174
 											</div>
 											<small><em>Per person, Return*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
@@ -893,14 +893,14 @@ include 'header.php';
 										</div>
 										<div class="col-lg-auto">
 											<div class="price1">
-                                            <i class="fa-solid fa-coins"></i>KSHS 11,449
+                                            <i class="fas fa-coins"></i>KSHS 11,449
 											</div>
 											<small><em>Per person, One Way*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
 										</div>
 										<div class="col-lg-auto">
 											<div class="price2">
-                                             <i class="fa-solid fa-coins"></i>KSHS 31,327
+                                             <i class="fas fa-coins"></i>KSHS 31,327
 											</div>
 											<small><em>Per person, Return*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
@@ -936,14 +936,14 @@ include 'header.php';
 										</div>
 										<div class="col-lg-auto">
 											<div class="price1">
-                                            <i class="fa-solid fa-coins"></i>KSHS 28,774
+                                            <i class="fas fa-coins"></i>KSHS 28,774
 											</div>
 											<small><em>Per person, One Way*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
 										</div>
 										<div class="col-lg-auto">
 											<div class="price2">
-                                             <i class="fa-solid fa-coins"></i>KSHS 31,327
+                                             <i class="fas fa-coins"></i>KSHS 31,327
 											</div>
 											<small><em>Per person, Return*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
@@ -979,14 +979,14 @@ include 'header.php';
 										</div>
 										<div class="col-lg-auto">
 											<div class="price1">
-                                            <i class="fa-solid fa-coins"></i>KSHS 37,826
+                                            <i class="fas fa-coins"></i>KSHS 37,826
 											</div>
 											<small><em>Per person, One Way*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
 										</div>
 										<div class="col-lg-auto">
 											<div class="price2">
-                                             <i class="fa-solid fa-coins"></i>KSHS 44,327
+                                             <i class="fas fa-coins"></i>KSHS 44,327
 											</div>
 											<small><em>Per person, Return*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
@@ -1022,14 +1022,14 @@ include 'header.php';
 										</div>
 										<div class="col-lg-auto">
 											<div class="price1">
-                                            <i class="fa-solid fa-coins"></i>KSHS 33,688
+                                            <i class="fas fa-coins"></i>KSHS 33,688
 											</div>
 											<small><em>Per person, One Way*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
 										</div>
 										<div class="col-lg-auto">
 											<div class="price2">
-                                             <i class="fa-solid fa-coins"></i>KSHS 54,118
+                                             <i class="fas fa-coins"></i>KSHS 54,118
 											</div>
 											<small><em>Per person, Return*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
@@ -1065,14 +1065,14 @@ include 'header.php';
 										</div>
 										<div class="col-lg-auto">
 											<div class="price1">
-                                            <i class="fa-solid fa-coins"></i>KSHS 33,688
+                                            <i class="fas fa-coins"></i>KSHS 33,688
 											</div>
 											<small><em>Per person, One Way*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>
 										</div>
 										<div class="col-lg-auto">
 											<div class="price2">
-                                             <i class="fa-solid fa-coins"></i>KSHS 54,118
+                                             <i class="fas fa-coins"></i>KSHS 54,118
 											</div>
 											<small><em>Per person, Return*</em></small><br>
 											<a href="flight-enquiry.php" class="button-rounded">Book Now</a>

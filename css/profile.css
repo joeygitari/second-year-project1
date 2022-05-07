@@ -173,6 +173,7 @@ a {
     border-top: 2px solid transparent;
     display: inline-flex;
     transition: 0.25s ease;
+    margin-left: 5%;
 }
 
 .tabs a.active,

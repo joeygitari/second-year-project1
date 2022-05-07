@@ -93,6 +93,7 @@ function loginUser($conn, $email, $password){
         session_start();
         $_SESSION["firstname"] = $emailExists["FirstName"];
         $_SESSION["lastname"] = $emailExists["LastName"];
+        $_SESSION["email"] = $emailExists["Email"];
         header("location: ../home.php");
         exit();
         
@@ -102,3 +103,20 @@ function loginUser($conn, $email, $password){
 
     }
 }
+// function isAdmin() {
+//     require_once '../includes/dbh.inc.php';
+
+//     $stmt= $conn->query("SELECT * FROM tour_guide.user_reg WHERE user_reg.Email = Email;");
+//     $row = $stmt->fetch_assoc();
+
+//     $user_level = $row['user_level'];
+
+//     $_SESSION ["user_level"] = USER_LEVEL_ADMIN;
+
+//     if ( isset( $_SESSION['user_level'] ) && $user_level == 1) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+

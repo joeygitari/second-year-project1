@@ -19,9 +19,9 @@
 				<a href="profile.php">
 					Overview
 				</a>
-				<a href="#" >
+				<a href="bookings/view-bookings.php" >
 					Current Bookings
-				</a>
+				</a> 
 				<a href="#" >
 					Past Bookings
 				</a>
@@ -41,8 +41,6 @@
               echo "<p>" .$_SESSION["firstname"]."  ".$_SESSION["lastname"]."</p>";
             ?>    
            </div>
-					<img src=""/>
-				</span>
 			</button>
 			<div class="app-header-actions-buttons">
 				<button class="icon-button large">
@@ -109,56 +107,7 @@
 					</article>
 				</div>
 			</section>
-			<section class="transfer-section">
-				<div class="transfer-section-header">
-					<h2>Latest view history</h2>
-				</div>
-				<div class="transfers">
-					<div class="transfer">
-						<div class="transfer-logo">
-							<img src="" />
-						</div>
-						<dl class="transfer-details">
-							<div>
-								<dt></dt>
-								<dd></dd>
-							</div>
-							<div>
-								<dt>28 Oct. 21</dt>
-							</div>
-						</dl>
-					</div>
-					<div class="transfer">
-						<div class="transfer-logo">
-							<img src="" />
-						</div>
-						<dl class="transfer-details">
-							<div>
-								<dt></dt>
-								<dd></dd>
-							</div>
-							<div>
-								<dt>26 Oct. 21</dt>
-							</div>
-						</dl>
-					</div>
-					<div class="transfer">
-						<div class="transfer-logo">
-							<img src="" />
-						</div>
-						<dl class="transfer-details">
-							<div>
-								<dt></dt>
-								<dd></dd>
-							</div>
-							<div>
-								<dt>22 Oct. 21</dt>
-							</div>
-						</dl>
-						
-					</div>
-				</div>
-			</section>
+		
 		</div>
 	</div>
 </div>

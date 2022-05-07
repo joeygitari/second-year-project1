@@ -87,7 +87,9 @@ h3.sub-heading {
 select.form-control,
 select.subject,
 select.object,
-input#datepicker {
+select.price,
+input#datepicker,
+input#pricepicker {
     width: 100%;
     font-weight: 300;
     color: #fff;

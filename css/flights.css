@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-
 /* flight navigation bar */
 
 .navMenu {
@@ -113,7 +111,7 @@ article {
 
 .entry-2 {
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin-top: 10px;
 }
 
@@ -123,8 +121,7 @@ article {
     padding-left: 1px;
     margin-right: 5px;
     display: inline-block;
-    font-family: "font-icons";
-    line-height: inherit;
+    /* line-height: inherit; */
 }
 
 .entry-content {

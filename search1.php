@@ -3,16 +3,16 @@
 ?>
 
 <?php
-    $Regions = mysqli_real_escape_string($conn, $_GET['Regions']);
+    $region = mysqli_real_escape_string($conn, $_GET['region']);
 
-    $sql = "SELECT * FROM towns WHERE Regions = '$Regions'";
+    $sql = "SELECT * FROM places WHERE region = '$region'";
     $result = mysqli_query($conn, $sql);
     $queryResults = mysqli_num_rows($result);
     
     if($queryResults > 0){
         while($row = mysqli_fetch_assoc($result)){
             echo "<div>
-            <h3>".$row['Regions']."</h3>
+            <h3>".$row['region']."</h3>
             </div>";
         }
     }

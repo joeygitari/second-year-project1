@@ -25,7 +25,7 @@
         <h1>Talii Kenya</h1>
     </div>
 
-     <?php
+    <?php
         include 'header.php';
     ?> 
 
@@ -87,7 +87,7 @@
     
     <div class="information">
         <h5>OUR SERVICES</h5>
-        <p>We offer a wide range of services from places to go, to things to do and hotel accommodations. We strive to give tourists the best experience while traveling in Kenya.
+        <p>We offer a wide range of services from local and international flight tickets to hotel accomodation, transfers and excursions. We make sure to follow through on our promises to clients all the while maintaining confidentiality of sensitive information and not compromising on quality.
         </p>
     </div>
     <br>
@@ -140,7 +140,7 @@
     <p>&copy Copyright</p>
 </footer> -->
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
 <script src="scripts\responses.js"></script>
 <script src="scripts\chat.js"></script>
 
