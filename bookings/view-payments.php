@@ -112,7 +112,7 @@
 
 </div>
 
-<title>Current Bookings</title>
+<title>Payment Methods</title>
 
 <div class="app">
 	<header class="app-header">
@@ -125,7 +125,7 @@
 		</div>
 		<div class="app-header-navigation">
 			<div class="tabs">
-      <a href="..\profile.php">
+            <a href="..\profile.php">
 					Overview
 				</a>
 				<a href="view-bookings.php" >
@@ -168,97 +168,22 @@
 
 	</header>
 <section>
-      <div class='tbl-header'>
-      <table cellpadding='0' cellspacing='0' border='0'>
-          <thead>
-          <p>ACCOMMODATIONS</p>
-            <tr>
-              <th>Place</th>
-              <th>Hotel</th>
-              <th>Check In Date</th>
-              <th>Check Out Date</th>
-              <th>Total Amount</th>
-              <th>Payment method</th>
-              <th>Payment Status</th>
-            </tr>
-          </thead>
-        </table>
-      </div>
      <?php
           require '../includes/dbh.inc.php';
           require '../includes/functions.inc.php';
           $emailuser = $_SESSION["email"];
 
           if(isset($_SESSION["firstname"])){
-          $stmt = "SELECT * FROM tour_guide.accommodation INNER JOIN  user_reg ON accommodation.Email = user_reg.Email;";
-          // $row = $stmt->fetch_assoc();
-          $query_run = mysqli_query($conn,$stmt);
-          if(mysqli_num_rows($query_run)>0){
-            foreach($query_run as $row){
-            $subtotal = $row['Price'] * $row['Adults'];
             echo "
               <table cellpadding='0' cellspacing='0' border='0'>
-                    <td>" . $row['Place'] . "</td>
-                    <td>" . $row['Hotel'] . "</td>
-                    <td>" . $row['CheckIn'] . "</td>
-                    <td>" . $row['CheckOut'] . "</td>
-                    <td>".$subtotal."</td>
-                    <td> <div id='paypal-payment-button'>
-                    
-                    </div>
-                    </td>
-                    <td></td>
-              </table>";
-        }
-        }
-      }
-?>
-    <div class='tbl-header'>
-    <table cellpadding='0' cellspacing='0' border='0'>
-        <thead>
-        <p>FLIGHTS</p>
-          <tr>
-            <th>From</th>
-            <th>To</th>
-            <th>Airline</th>
-            <th>Departure Date</th>
-            <th>Total Amount</th>
-            <th>Payment method</th>
-            <th>Payment Status</th>
-          </tr>
-        </thead>
-      </table>
-    </div>
-    <?php
-          $emailuser = $_SESSION["email"];
 
-          if(isset($_SESSION["firstname"])){
-          $stmt = "SELECT * FROM tour_guide.flights INNER JOIN  user_reg ON flights.Email = user_reg.Email;";
-          // $row = $stmt->fetch_assoc();
-          $query_run = mysqli_query($conn,$stmt);
-          if(mysqli_num_rows($query_run)>0){
-            foreach($query_run as $row){
-            $total = $row['Price'] * $row['Tickets'];
-            echo"
-              <table cellpadding='0' cellspacing='0' border='0'>
-                <tbody>
-              <tr>
-                    <td>" . $row['FromAirport'] . "</td>
-                    <td>" . $row['ToAirport'] . "</td>
-                    <td>" . $row['Airline'] . "</td>
-                    <td>" . $row['DepartureDate'] . "</td>
-                    <td>".$total."</td>
                     <td> <div id='paypal-payment-button'>
                     
                     </div>
                     </td>
-                    <td></td>
-                  </tr>
-                </tbody>
+                    
               </table>";
-            }
-          }
-  }
+        }
 ?>
 
 </section>

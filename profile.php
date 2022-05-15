@@ -22,14 +22,14 @@
 				<a href="bookings/view-bookings.php" >
 					Current Bookings
 				</a> 
-				<a href="#" >
+				<a href="bookings/past-bookings.php" >
 					Past Bookings
 				</a>
 				
-				<a href="#">
+				<a href="bookings/view-payments.php">
 					Payment Methods
 				</a>
-				<a href="#">
+				<a href="bookings/booking-reports.php">
 					Reports
 				</a>
 			</div>
