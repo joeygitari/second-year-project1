@@ -30,6 +30,7 @@ $Email = $_POST['Email'];
 $sqli ="INSERT INTO tour_guide.accommodation (Place, Hotel, CheckIn, CheckOut, Adults, Children, Infants, Price, FullName, PhoneNumber, Email) VALUES ('$Place', '$Hotel', '$CheckIn', '$CheckOut', '$Adults', '$Children', '$Infants', '$Price', '$FullName', '$PhoneNumber', '$Email')";
 if ($con->query($sqli) === TRUE) {
     echo "New record created successfully";
+    header("location: ../profile.php");
 } else {
     echo "Error: " . $sqli . "<br>" . $con->error;
 }

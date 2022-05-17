@@ -80,7 +80,7 @@
                        <li><a href="book-malindi.php">Malindi</a></li>
                        <li><a href="book-taita.php">Taita</a></li>
                        <li><a href="book-centralkenya.php">Central Kenya</a></li>           
-                    <li><a href="book-riftvalley.php">Rift Valley</a></li>  
+                    <li><a href="book-riftvalley.php">Rift</a></li>  
                     </ul>
                     <li>
                     <li><a href="flights.php">Flights</a></li>                       

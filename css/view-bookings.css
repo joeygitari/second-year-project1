@@ -52,3 +52,26 @@ td {
  ::-webkit-scrollbar-thumb {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
+
+
+/*payment*/
+
+.pay-button {
+    width: 50%;
+    text-decoration: none;
+    background-color: rgb(133, 124, 55);
+}
+
+.pay-button a {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.site-title img {
+    width: 15%;
+}
+
+.font-title {
+    margin-bottom: 50px
+}

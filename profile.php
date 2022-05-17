@@ -30,7 +30,7 @@
 					Payment Methods
 				</a>
 				<a href="bookings/booking-reports.php">
-					Reports
+					Your Interests
 				</a>
 			</div>
 		</div>

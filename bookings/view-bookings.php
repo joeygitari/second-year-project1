@@ -178,7 +178,7 @@
               <th>Check In Date</th>
               <th>Check Out Date</th>
               <th>Total Amount</th>
-              <th>Payment method</th>
+              <th>Pay</th>
               <th>Payment Status</th>
             </tr>
           </thead>
@@ -190,7 +190,7 @@
           $emailuser = $_SESSION["email"];
 
           if(isset($_SESSION["firstname"])){
-          $stmt = "SELECT * FROM tour_guide.accommodation INNER JOIN  user_reg ON accommodation.Email = user_reg.Email;";
+          $stmt = "SELECT * FROM tour_guide.accommodation WHERE accommodation.Email = '$emailuser';";
           // $row = $stmt->fetch_assoc();
           $query_run = mysqli_query($conn,$stmt);
           if(mysqli_num_rows($query_run)>0){
@@ -203,10 +203,7 @@
                     <td>" . $row['CheckIn'] . "</td>
                     <td>" . $row['CheckOut'] . "</td>
                     <td>".$subtotal."</td>
-                    <td> <div id='paypal-payment-button'>
-                    
-                    </div>
-                    </td>
+                    <td><button class='pay-button'><a href='view-payments.php'>PAY</a></button></td>
                     <td></td>
               </table>";
         }
@@ -223,7 +220,7 @@
             <th>Airline</th>
             <th>Departure Date</th>
             <th>Total Amount</th>
-            <th>Payment method</th>
+            <th>Pay</th>
             <th>Payment Status</th>
           </tr>
         </thead>
@@ -233,8 +230,7 @@
           $emailuser = $_SESSION["email"];
 
           if(isset($_SESSION["firstname"])){
-          $stmt = "SELECT * FROM tour_guide.flights INNER JOIN  user_reg ON flights.Email = user_reg.Email;";
-          // $row = $stmt->fetch_assoc();
+          $stmt = "SELECT * FROM tour_guide.flights WHERE flights.Email = '$emailuser';";
           $query_run = mysqli_query($conn,$stmt);
           if(mysqli_num_rows($query_run)>0){
             foreach($query_run as $row){
@@ -248,10 +244,7 @@
                     <td>" . $row['Airline'] . "</td>
                     <td>" . $row['DepartureDate'] . "</td>
                     <td>".$total."</td>
-                    <td> <div id='paypal-payment-button'>
-                    
-                    </div>
-                    </td>
+                    <td><button class='pay-button'><a href='view-payments.php'>PAY</a></button></td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -266,8 +259,8 @@
 		</div>
 	</div>
 </div>
-<script src="https://www.paypal.com/sdk/js?client-id=AYDueCv9Jn15Mcf-t4CYJpEEug1uom8FPNgG3PD0wpS-7Sjpi7Hon8UhCKFEDfMnNKk176secQuMeBnE"></script>
-<script src="../scripts/paypal.js"></script>
+<!-- <script src="https://www.paypal.com/sdk/js?client-id=AYDueCv9Jn15Mcf-t4CYJpEEug1uom8FPNgG3PD0wpS-7Sjpi7Hon8UhCKFEDfMnNKk176secQuMeBnE"></script> -->
+<!-- <script src="../scripts/paypal.js"></script> -->
 </body>
 
 </html>

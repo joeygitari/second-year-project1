@@ -15,7 +15,8 @@ paypal.Buttons({
     onApprove: function(data, actions) {
         return actions.order.capture().then(function(details) {
             console.log(details)
-            window.location.replace("http://localhost/project_ws/project1/payments/success.php")
+            console.log(details.payer.email_address)
+            window.location.replace("http://localhost/project_ws/project1/payments/success.php?email=" + details.payer.email_address + "&id=" + details.id)
         })
     },
     onCancel: function(data) {
