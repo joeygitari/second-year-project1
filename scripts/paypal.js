@@ -7,6 +7,7 @@ function getParameterByName(name, url = window.location.href) {
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 var id = getParameterByName('id');
+
 paypal.Buttons({
     style: {
         color: 'blue',

@@ -179,7 +179,6 @@
               <th>Check Out Date</th>
               <th>Total Amount</th>
               <th>Pay</th>
-              <th>Payment Status</th>
             </tr>
           </thead>
         </table>
@@ -204,7 +203,6 @@
                     <td>" . $row['CheckOut'] . "</td>
                     <td>".$subtotal."</td>
                     <td><button class='pay-button'><a href='view-payments.php?id=".$row['HotelId']."'>PAY</a></button></td>
-                    <td></td>
               </table>";
         }
         }
@@ -221,7 +219,6 @@
             <th>Departure Date</th>
             <th>Total Amount</th>
             <th>Pay</th>
-            <th>Payment Status</th>
           </tr>
         </thead>
       </table>
@@ -244,8 +241,7 @@
                     <td>" . $row['Airline'] . "</td>
                     <td>" . $row['DepartureDate'] . "</td>
                     <td>".$total."</td>
-                    <td><button class='pay-button'><a href='view-payments.php'>PAY</a></button></td>
-                    <td></td>
+                    <td><button class='pay-button'><a href='view-payments.php?id=".$row['FlightId']."'>PAY</a></button></td>
                   </tr>
                 </tbody>
               </table>";

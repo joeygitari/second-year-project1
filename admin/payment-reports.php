@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="../css/home.css" type="text/css">
     <link rel="stylesheet" href="../css/search.css" type="text/css">
     <link rel="stylesheet" href="../css/reports.css" type="text/css">
-    <title>Place Reports</title>
+    <title>Payment Reports</title>
 </head>
 
 <style>
@@ -171,38 +171,39 @@
 
 		<div class="app-body-main-content">
 
-                <a href="add-place.php"><button class="button-add">Add Place</button></a>
+                <a href="add-hotel.php"><button class="button-add">Add Payment</button></a>
 
 	            <div class='tbl-header'>
 	              <table cellpadding='0' cellspacing='0' border='0'>
                    <thead>
-                    <p>PLACE REPORTS</p>
+                    <p>PAYMENT REPORTS</p>
                      <tr>
-                      <th>Top 3 Most Visited Towns</th>
-                      <th>Region</th>
-                      <th>County</th>
+                      <th>Hotel</th>
+                      <th>Price Paid</th>
+                      <th>My Earnings</th>
+                      <th>Manager's Earnings</th>
                      </tr>
                   </thead>
                  </table>
 	           </div>
 
             <?php
-            $stmt = "SELECT * FROM tour_guide.accommodation 
-            LEFT JOIN tour_guide.places ON accommodation.Place=places.region
-            GROUP BY Place
-            ORDER BY COUNT(*) DESC
-            LIMIT 3; ";
+            $stmt = "SELECT * FROM tour_guide.reservations
+            ; ";
             // $row = $stmt->fetch_assoc();
             $query_run = mysqli_query($conn,$stmt);
             if(mysqli_num_rows($query_run)>0){
               foreach($query_run as $row){
+                  $commission=$row['Price']*0.40;
+                  $manager = $row['Price']*0.60;
               echo"
               <table cellpadding='0' cellspacing='0' border='0'>
               <tbody>
                 <tr>
-                   <td>" . $row['Place'] . "</td>
-                   <td>" . $row['region'] . "</td>
-                   <td>" . $row['county'] . "</td>
+                   <td>" . $row['Hotel'] . "</td>
+                   <td>" . $row['Price'] . "</td>
+                   <td>" . $commission . "</td>
+                   <td>" . $manager . "</td>
                </tr>
               </tbody>
             </table>";

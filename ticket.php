@@ -1,7 +1,6 @@
 <?php
     include 'header.php';
     require 'includes/dbh.inc.php';
-	require 'includes/functions.inc.php';
 	$emailuser = $_SESSION["email"];
 ?>
 

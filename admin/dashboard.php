@@ -141,15 +141,15 @@
 				</a>
 				<a href="place-reports.php" >
 					Places Reports
-				</a> 
-				<a href="activity-reports.php" >
-					Activities Reports
-				</a>				
+				</a> 				
 				<a href="accommodations-reports.php">
 					Accommodations Reports
 				</a>
 				<a href="flights-reports.php">
 					Flights Reports
+				</a>
+                <a href="payment-reports.php" >
+			Payment Reports
 				</a>
 			</div>
 		</div>

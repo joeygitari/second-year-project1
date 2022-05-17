@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="../css/home.css" type="text/css">
     <link rel="stylesheet" href="../css/search.css" type="text/css">
     <link rel="stylesheet" href="../css/reports.css" type="text/css">
-    <title>Acitivity Reports</title>
+    <title>Activity Reports</title>
 </head>
 
 <style>
@@ -144,14 +144,17 @@
 				<a href="place-reports.php" >
 					Places Reports
 				</a> 
-				<a href="activity-reports.php" >
+				<!-- <a href="activity-reports.php" >
 					Activities Reports
-				</a>				
+				</a>				 -->
 				<a href="accommodations-reports.php">
 					Accommodations Reports
 				</a>
 				<a href="flights-reports.php">
 					Flights Reports
+				</a>
+        <a href="payment-reports.php" >
+			Payment Reports
 				</a>
 			</div>
 		</div>
@@ -168,7 +171,7 @@
 
 		<div class="app-body-main-content">
 
-                <a href="../signup.php"><button class="button-add">Add Activity</button></a>
+                <a href="add-activity.php"><button class="button-add">Add Activity</button></a>
 
                 <div class='tbl-header'>
 	              <table cellpadding='0' cellspacing='0' border='0'>
