@@ -3,7 +3,7 @@
     line-height: 1.5;
     min-height: 100vh;
     font-family: "Be Vietnam Pro", sans-serif;
-    color: #ffffff;
+    color: #0f0c0c;
     display: flex;
     padding-top: 3vw;
     padding-bottom: 3vw;
@@ -11,7 +11,7 @@
 }
 
 body {
-    background-image: url(../project_images/prof-background.png);
+    background-image: url(../project_images/profileback.png);
     background-repeat: no-repeat;
 }
 
@@ -179,8 +179,8 @@ a {
 .tabs a.active,
 .tabs a:hover,
 .tabs a:focus {
-    color: #ffffff;
-    border-color: #ffffff;
+    color: #3b3b29;
+    border-color: #000000;
 }
 
 .user-profile {
@@ -232,7 +232,7 @@ a {
     border: 0;
     background-color: transparent;
     border: 1px solid #969593;
-    color: #ffffff;
+    color: #473f3f;
     display: flex;
     align-items: center;
     justify-content: center;

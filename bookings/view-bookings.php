@@ -132,14 +132,14 @@
 					Current Bookings
 				</a> 
 				<a href="past-bookings.php" >
-					Past Bookings
+        Paid Reservations
 				</a>
 				
 				<a href="view-payments.php">
 					Payment Methods
 				</a>
 				<a href="booking-reports.php">
-					Reports
+        Your Interests
 				</a>
 			</div>
 		</div>
@@ -171,7 +171,7 @@
       <div class='tbl-header'>
       <table cellpadding='0' cellspacing='0' border='0'>
           <thead>
-          <p>ACCOMMODATIONS</p>
+          <p style="color:white;">ACCOMMODATIONS</p>
             <tr>
               <th>Place</th>
               <th>Hotel</th>
@@ -203,7 +203,7 @@
                     <td>" . $row['CheckIn'] . "</td>
                     <td>" . $row['CheckOut'] . "</td>
                     <td>".$subtotal."</td>
-                    <td><button class='pay-button'><a href='view-payments.php'>PAY</a></button></td>
+                    <td><button class='pay-button'><a href='view-payments.php?id=".$row['HotelId']."'>PAY</a></button></td>
                     <td></td>
               </table>";
         }
@@ -213,7 +213,7 @@
     <div class='tbl-header'>
     <table cellpadding='0' cellspacing='0' border='0'>
         <thead>
-        <p>FLIGHTS</p>
+        <p style="color:white;">FLIGHTS</p>
           <tr>
             <th>From</th>
             <th>To</th>

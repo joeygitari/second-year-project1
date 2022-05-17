@@ -3,7 +3,7 @@
     line-height: 1.5;
     min-height: 100vh;
     font-family: "Be Vietnam Pro", sans-serif;
-    color: #ffffff;
+    color: #000000;
     display: flex;
     padding-top: 3vw;
     padding-bottom: 3vw;
@@ -11,7 +11,7 @@
 }
 
 body {
-    background-image: url(../project_images/dashboard.png);
+    background-image: url(../project_images/profileback.png);
     background-repeat: no-repeat;
 }
 
@@ -56,7 +56,7 @@ a {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        border-bottom: 1px solid #313131;
+        border-bottom: 1px solid #000000;
     }
 }
 
@@ -138,7 +138,7 @@ a {
     display: flex;
     justify-content: space-between;
     color: black;
-    border-bottom: 1px solid #313131;
+    border-bottom: 1px solid #000000;
 }
 
 .tabs a {
@@ -154,8 +154,8 @@ a {
 .tabs a.active,
 .tabs a:hover,
 .tabs a:focus {
-    color: #ffffff;
-    border-color: #ffffff;
+    color: #665e5e;
+    border-color: #111111;
 }
 
 .user-profile {
@@ -164,7 +164,7 @@ a {
     border: 0;
     background: transparent;
     cursor: pointer;
-    color: #969593;
+    color: #000000;
     transition: 0.25s ease;
 }
 

@@ -123,15 +123,39 @@
     include '\xampp\htdocs\project_ws\project1\includes\dbh.inc.php';
     $email=$_GET['email'];
     $id=$_GET['id'];
+    $hotelid=$_GET['hotelid'];
 
-        $stmt = "INSERT INTO tour_guide.reservations (ReservationId, HotelId, Hotel, Place, Price, Email)
-        VALUES 
-        ('$id', 
-        SELECT [HotelId], [Hotel], [Place], [Price] 
-        FROM accommodations 
-        WHERE accommodations.Email=reservations.Email, 
-        , '$email');";
+    $emailuser = $_SESSION["email"];
 
+        $sql1="SELECT HotelId, Hotel, Place, Price 
+        FROM tour_guide.accommodation
+        WHERE accommodation.Email='$emailuser' AND accommodation.HotelId='$hotelid'";
+
+        $query_run = mysqli_query($conn,$sql1);
+        foreach($query_run AS $row){
+            var_dump($row) ;
+            $hotelid=$row['HotelId'];
+            $hotel=$row['Hotel'];
+            $place=$row['Place'];
+            $price=$row['Price'];
+
+            $sql = "INSERT INTO tour_guide.reservations (ReservationId, HotelId, Hotel, Place, Price, Email)
+            VALUES (?,?,?,?,?,?);";
+                $stmt = mysqli_stmt_init($conn);
+            if (!mysqli_stmt_prepare($stmt, $sql)){
+                exit();
+            }
+
+            mysqli_stmt_bind_param($stmt, "ssssss", $id, $hotelid, $hotel, $place, $price, $email);
+            mysqli_stmt_execute($stmt);
+
+
+            mysqli_stmt_close($stmt);
+
+            
+        }
+        $sql2="DELETE FROM tour_guide.accommodation WHERE accommodation.HotelId='$hotelid'";
+        mysqli_query($conn,$sql2);
     ?>
 </body>
 </html>

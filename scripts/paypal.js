@@ -1,3 +1,12 @@
+function getParameterByName(name, url = window.location.href) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+var id = getParameterByName('id');
 paypal.Buttons({
     style: {
         color: 'blue',
@@ -16,7 +25,7 @@ paypal.Buttons({
         return actions.order.capture().then(function(details) {
             console.log(details)
             console.log(details.payer.email_address)
-            window.location.replace("http://localhost/project_ws/project1/payments/success.php?email=" + details.payer.email_address + "&id=" + details.id)
+            window.location.replace("http://localhost/project_ws/project1/payments/success.php?email=" + details.payer.email_address + "&id=" + details.id + "&hotelid=" + id)
         })
     },
     onCancel: function(data) {

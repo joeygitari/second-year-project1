@@ -132,14 +132,14 @@
 					Current Bookings
 				</a> 
 				<a href="past-bookings.php" >
-					Past Bookings
+                Paid Reservations
 				</a>
 				
 				<a href="view-payments.php">
 					Payment Methods
 				</a>
 				<a href="booking-reports.php">
-					Reports
+                Your Interests
 				</a>
 			</div>
 		</div>

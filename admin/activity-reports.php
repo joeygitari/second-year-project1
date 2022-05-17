@@ -24,7 +24,7 @@
 
 <style>
    body {
-    background-image: url(../project_images/wickedbackground.png);
+    background-image: url(../project_images/profileback.png);
     background-repeat: no-repeat;
 }
 </style>

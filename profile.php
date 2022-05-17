@@ -23,7 +23,7 @@
 					Current Bookings
 				</a> 
 				<a href="bookings/past-bookings.php" >
-					Past Bookings
+				Paid Reservations
 				</a>
 				
 				<a href="bookings/view-payments.php">
