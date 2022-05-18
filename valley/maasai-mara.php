@@ -99,7 +99,7 @@
     <?php
         if(isset($_SESSION["firstname"])){
             echo "<p>Hello " .$_SESSION["firstname"]. "!</p>";
-            echo "<a href='profile.php'>Profile Page</a>";
+            echo "<a href='../profile.php'>Profile Page</a>";
             echo "<a href='../includes/logout.inc.php'>Log Out</a>";
         }
         else{
