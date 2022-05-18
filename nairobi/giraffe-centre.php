@@ -54,7 +54,29 @@
                     <a href="../adventures.php">Hikes & Other Adventures</a>
                 </div>
             </div>
-
+            <div class="places">
+                <button class="dropbtn">Book
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                
+                <div class="places-content">
+                <li><a>Accomodation</a>
+                    <ul>
+                    <li><a href="../book-nairobi.php">Nairobi</a></li>
+                    <li><a href="../book-kisumu.php">Kisumu</a></li>
+                       <li><a href="../book-mombasa.php">Mombasa</a></li>
+                       <li><a href="../book-lamu.php">Lamu</a></li>
+                       <li><a href="../book-diani.php">Diani</a></li>
+                       <li><a href="../book-malindi.php">Malindi</a></li>
+                       <li><a href="../book-taita.php">Taita</a></li>
+                       <li><a href="../book-centralkenya.php">Central Kenya</a></li>           
+                    <li><a href="../book-riftvalley.php">Rift</a></li>  
+                    </ul>
+                    <li>
+                    <li><a href="../flights.php">Flights</a></li>                       
+                     
+                </div>
+            </div>
             <a href="../maps.php">Maps</a>
             <a href="javascript:void(0); " class="icon " onclick="myFunction() ">
                 <i class="fa fa-bars "></i>
