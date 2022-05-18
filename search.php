@@ -14,9 +14,67 @@
 
         if ($queryResult > 0){
             while($row = mysqli_fetch_assoc($result)){
-                echo "<a href='nairobi.php?region".$row['region']."'><div>
-            <h1>".$row['region']."</h1>
-            </div></a>";
+                switch ($search) {
+                    case 'Nairobi'|'nairobi':
+                        echo "<a href='nairobi.php?region".$row['region']."'><div>
+                        <h1>".$row['region']."</h1>
+                        </div></a>";
+                        break;
+                    
+                    case 'Kisumu'|'kisumu':
+                        echo "<a href='kisumu.php?region".$row['region']."'><div>
+                        <h1>".$row['region']."</h1>
+                        </div></a>";
+                        break;
+
+                    case 'Mombasa'|'mombasa':
+                        echo "<a href='mombasa.php?region".$row['region']."'><div>
+                        <h1>".$row['region']."</h1>
+                        </div></a>";
+                        break;
+
+                    case 'Lamu'|'lamu':
+                        echo "<a href='lamu.php?region".$row['region']."'><div>
+                        <h1>".$row['region']."</h1>
+                        </div></a>";
+                        break;
+
+                    case 'Diani'|'diani':
+                        echo "<a href='diani.php?region".$row['region']."'><div>
+                        <h1>".$row['region']."</h1>
+                        </div></a>";
+                        break;
+
+                    case 'Malindi'|'malindi':
+                        echo "<a href='malindi.php?region".$row['region']."'><div>
+                        <h1>".$row['region']."</h1>
+                        </div></a>";
+                        break;
+
+                    case 'Taita'|'taita':
+                        echo "<a href='taita.php?region".$row['region']."'><div>
+                        <h1>".$row['region']."</h1>
+                        </div></a>";
+                        break;
+
+                    case 'Central'|'central':
+                        echo "<a href='centralkenya.php?region".$row['region']."'><div>
+                        <h1>".$row['region']."</h1>
+                        </div></a>";
+                        break;
+
+                    case 'Rift'|'rift':
+                        echo "<a href='riftvalley.php?region".$row['region']."'><div>
+                        <h1>".$row['region']."</h1>
+                        </div></a>";
+                        break;
+
+
+                    default:
+                        echo "No results matching your search!";
+                        break;
+                }
+        
             }
 
         }

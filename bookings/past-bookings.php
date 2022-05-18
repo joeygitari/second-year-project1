@@ -171,7 +171,7 @@
       <div class='tbl-header'>
       <table cellpadding='0' cellspacing='0' border='0'>
           <thead>
-          <p style="color:white;">ACCOMMODATIONS</p>
+          <p style="color:white;">HOTEL RESERVATIONS</p>
             <tr>
               <th>Place</th>
               <th>Hotel</th>
@@ -194,6 +194,40 @@
               <table cellpadding='0' cellspacing='0' border='0'>
                     <td>" . $row['Place'] . "</td>
                     <td>" . $row['Hotel'] . "</td>
+              </table>";
+        }
+        }
+      }
+?>
+
+<div class='tbl-header'>
+      <table cellpadding='0' cellspacing='0' border='0'>
+          <thead>
+          <p style="color:white;">FLIGHT TICKETS</p>
+            <tr>
+              <th>Airline</th>
+              <th>From:</th>
+              <th>To:</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+     <?php
+          require '../includes/dbh.inc.php';
+          $emailuser = $_SESSION["email"];
+ 
+          if(isset($_SESSION["firstname"])){
+          $stmt = "SELECT * FROM tour_guide.tickets WHERE tickets.Email = '$emailuser';";
+          // $row = $stmt->fetch_assoc();
+          $query_run = mysqli_query($conn,$stmt);
+          if(mysqli_num_rows($query_run)>0){
+            foreach($query_run as $row){
+            echo "
+              <table cellpadding='0' cellspacing='0' border='0'>
+                    <td>" . $row['Airline'] . "</td>
+                    <td>" . $row['FromAirport'] . "</td>
+                    <td>" . $row['ToAirport'] . "</td>
+                    
               </table>";
         }
         }

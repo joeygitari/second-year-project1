@@ -95,7 +95,7 @@
             <form action="search.php" method="POST" rel="stylesheet" href="css\search.css" type="text/css">
             <div class="wrap">
             <div class="search">
-                <input type="text" name="search" class="searchTerm" placeholder="search...">
+                <input type="text" name="search" class="searchTerm" placeholder="search by town...">
                 <button type="submit" name="submit-search" class="searchButton">
                 <i class="fa fa-search"></i>
                 </button>

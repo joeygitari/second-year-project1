@@ -24,57 +24,45 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `beaches`
+-- Table structure for table `airlines`
 --
 
-CREATE TABLE `beaches` (
-  `number` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `county` varchar(100) NOT NULL
+CREATE TABLE `airlines` (
+  `airlineId` int(11) NOT NULL,
+  `airline` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `beaches`
+-- Dumping data for table `airlines`
 --
 
-INSERT INTO `beaches` (`number`, `name`, `county`) VALUES
-(1, 'Jomo Kenyatta Public Beach', 'Mombasa'),
-(2, 'Nyali Beach', 'Mombasa'),
-(3, 'Diani Beach', 'Diani'),
-(4, 'Chale Island', 'Diani'),
-(5, 'Tiwi Beaches', 'Diani'),
-(6, 'Watamu Beach', 'Malindi');
+INSERT INTO `airlines` (`airlineId`, `airline`) VALUES
+(1, 'AirKenya Express'),
+(2, 'Fly 540'),
+(3, 'Jambo Jet'),
+(4, 'Kenya Airways'),
+(5, 'Safari Link'),
+(6, 'Skyward Express');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `beaches`
+-- Indexes for table `airlines`
 --
-ALTER TABLE `beaches`
-  ADD PRIMARY KEY (`number`),
-  ADD KEY `county` (`county`);
+ALTER TABLE `airlines`
+  ADD PRIMARY KEY (`airlineId`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `beaches`
+-- AUTO_INCREMENT for table `airlines`
 --
-ALTER TABLE `beaches`
-  MODIFY `number` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `beaches`
---
-ALTER TABLE `beaches`
-  ADD CONSTRAINT `beaches_ibfk_1` FOREIGN KEY (`county`) REFERENCES `places` (`county`);
+ALTER TABLE `airlines`
+  MODIFY `airlineId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

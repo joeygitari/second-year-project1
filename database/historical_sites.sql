@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 17, 2022 at 12:20 PM
+-- Generation Time: May 18, 2022 at 06:36 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -107,6 +107,16 @@ ALTER TABLE `historical_sites`
 --
 ALTER TABLE `historical_sites`
   MODIFY `number` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `historical_sites`
+--
+ALTER TABLE `historical_sites`
+  ADD CONSTRAINT `historical_sites_ibfk_1` FOREIGN KEY (`county`) REFERENCES `places` (`county`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 03, 2022 at 02:40 PM
+-- Generation Time: May 18, 2022 at 06:38 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -47,10 +47,29 @@ CREATE TABLE `accommodation` (
 --
 
 INSERT INTO `accommodation` (`HotelId`, `Place`, `Hotel`, `CheckIn`, `CheckOut`, `Adults`, `Children`, `Infants`, `Price`, `FullName`, `PhoneNumber`, `Email`) VALUES
-(1, 'Diani', 'Diani Sea Lodge', '2022-05-08', '2022-05-13', 2, 0, 0, 0, 'Luna Gitari', '12345', 'luna@gmail.com'),
 (2, 'Nairobi', 'Kempinski Villa Rosa', '2022-05-06', '2022-05-08', 1, 0, 0, 0, 'Luna Gitari', '12345', 'luna@gmail.com'),
 (3, 'Nairobi', 'Kempinski Villa Rosa', '2022-05-06', '2022-05-08', 2, 0, 0, 0, 'Luna Gitari', '12345', 'luna@gmail.com'),
-(4, 'Nairobi', 'Kempinski Villa Rosa', '2022-05-06', '2022-05-08', 1, 0, 0, 37537, 'Luna Gitari', '12345', 'luna@gmail.com');
+(4, 'Nairobi', 'Kempinski Villa Rosa', '2022-05-06', '2022-05-08', 1, 0, 0, 37537, 'Luna Gitari', '12345', 'luna@gmail.com'),
+(5, 'Malindi', 'Hemingways Watamu', '2022-06-08', '2022-06-10', 2, 0, 0, 30607, 'Wairimu Kamiri', '07123456', 'joannekiara12@gmail.com'),
+(6, 'Lamu', 'The Red Pepper House', '2022-05-19', '2022-05-21', 2, 0, 0, 58905, 'Luna Gitari', '07123456', 'luna@gmail.com');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `activities`
+--
+
+CREATE TABLE `activities` (
+  `name` varchar(100) NOT NULL,
+  `county` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `activities`
+--
+
+INSERT INTO `activities` (`name`, `county`) VALUES
+('Kitesurfing', 'Diani');
 
 -- --------------------------------------------------------
 
@@ -87,6 +106,29 @@ INSERT INTO `adventures` (`number`, `name`, `county`) VALUES
 (16, 'Tafaria Castle', 'Nyahururu'),
 (17, 'Paradise Lost', 'Kiambu'),
 (18, 'Menengai Crater', 'Nakuru');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `airlines`
+--
+
+CREATE TABLE `airlines` (
+  `airlineId` int(11) NOT NULL,
+  `airline` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `airlines`
+--
+
+INSERT INTO `airlines` (`airlineId`, `airline`) VALUES
+(1, 'AirKenya Express'),
+(2, 'Fly 540'),
+(3, 'Jambo Jet'),
+(4, 'Kenya Airways'),
+(5, 'Safari Link'),
+(6, 'Skyward Express');
 
 -- --------------------------------------------------------
 
@@ -212,6 +254,118 @@ INSERT INTO `historical_sites` (`number`, `name`, `county`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `hotels`
+--
+
+CREATE TABLE `hotels` (
+  `name` varchar(100) NOT NULL,
+  `county` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `hotels`
+--
+
+INSERT INTO `hotels` (`name`, `county`) VALUES
+('Kempinski Villa Rosa', 'Nairobi'),
+('Hemingways Nairobi', 'Nairobi'),
+('Karen Gables', 'Nairobi'),
+('City Lodge Hotel', 'Nairobi'),
+('Nairobi Serena Hotel', 'Nairobi'),
+('Fairmont The Norfolk', 'Nairobi'),
+('Sankara Nairobi', 'Nairobi'),
+('Movenpick Hotel and Residences', 'Nairobi'),
+('Town Lodge', 'Nairobi'),
+('Hilton Garden Inn', 'Nairobi'),
+('Fairview Hotel', 'Nairobi'),
+('Four Points By Sheraton', 'Nairobi'),
+('Tribe Hotel', 'Nairobi'),
+('Crowne Plaza', 'Nairobi'),
+('Park Inn By Radisson', 'Nairobi'),
+('Best Western Plus Meridian', 'Nairobi'),
+('Trademark Hotel', 'Nairobi'),
+('Sarova Panafric', 'Nairobi'),
+('Sarova Stanley', 'Nairobi'),
+('Tamarind Tree Hotel', 'Nairobi'),
+('Eka Hotel', 'Nairobi'),
+('Double Tree By Hilton', 'Nairobi'),
+('Ole Sereni Hotel', 'Nairobi'),
+('The Boma', 'Nairobi'),
+('Ciala Resort Hotels', 'Kisumu'),
+('Imperial Hotel', 'Kisumu'),
+('Acacia Premier Hotel', 'Kisumu'),
+('Sovereign Hotel', 'Kisumu'),
+('Best Western Kisumu Hotel', 'Kisumu'),
+('The Vic Hotel', 'Kisumu'),
+('The Grand Royal Swiss Hotel', 'Kisumu'),
+('Pinecone Hotel', 'Kisumu'),
+('Jumuia Hotel', 'Kisumu'),
+('Sarova Whitesands Beach Resort And Spa', 'Mombasa'),
+('PrideInn Paradise Beach Resort And Spa', 'Mombasa'),
+('Travellers Beach Hotel', 'Mombasa'),
+('Serena Beach Resort And Spa', 'Mombasa'),
+('Voyager Beach Resort', 'Mombasa'),
+('Hotel Englishpoint And Spa', 'Mombasa'),
+('Severin Sea Lodge', 'Mombasa'),
+('Sun Africa Beach Hotel And Spa', 'Mombasa'),
+('Sultan Palace', 'Mombasa'),
+('The Majilis Resort', 'Lamu'),
+('The Red Pepper House', 'Lamu'),
+('Manda Bay', 'Lamu'),
+('Kizingo Beach Eco Lodge', 'Lamu'),
+('Kijani Hotel', 'Lamu'),
+('Banana House And Wellness Centre', 'Lamu'),
+('Zubeida Boutique Resort', 'Diani'),
+('Waterlovers Beach Resort', 'Diani'),
+('Eleven Pearl Hotel And Spa', 'Diani'),
+('Pinewood Beach Resort And Spa', 'Diani'),
+('Searenity Beach Villa', 'Diani'),
+('Baobab Beach Resort And Spa', 'Diani'),
+('Leisure Lodge Beach And Golf Resort', 'Diani'),
+('Neptune Paradise Beach Resort And Spa', 'Diani'),
+('Diani Sea Lodge', 'Diani'),
+('Jacaranda Indian Ocean Beach Resort', 'Diani'),
+('Swahili Beach Resort', 'Diani'),
+('Papillon Lagoon Reef Hotel', 'Diani'),
+('Billionaire Resort And Retreat', 'Malindi'),
+('Hemingways Watamu', 'Malindi'),
+('Medina Palms Watamu', 'Malindi'),
+('Leopard Point Luxury Beach Resort And Spa', 'Malindi'),
+('Lion In The Sun Billionaire Retreat Malindi', 'Malindi'),
+('White Elephant Sea Lodge', 'Malindi'),
+('Ocean Beach Resort And Spa', 'Malindi'),
+('Visiwa Beach Resort', 'Malindi'),
+('Turtle Bay Beach Club', 'Malindi'),
+('Salt Lick Safari Lodge', 'Taita'),
+('Maneaters Tsavo', 'Taita'),
+('Kilaguni Serena Safari Lodge', 'Taita'),
+('Manyatta Camp', 'Taita'),
+('Taita Hills Safari Resort And Spa', 'Taita'),
+('Voi Wildlife Lodge', 'Taita'),
+('Sweetwaters Serena Camp', 'Central Kenya'),
+('Ole Samara Suites', 'Central Kenya'),
+('Alba Hotel', 'Central Kenya'),
+('Aberdare Prestige And Royal Cottages', 'Central Kenya'),
+('Sovereign Suites', 'Central Kenya'),
+('The Warwick Hotel', 'Central Kenya'),
+('Angama Mara', 'Rift Valley'),
+('Sarova Lion Hill Game Lodge', 'Rift Valley'),
+('Enashipai Resort And Spa', 'Rift Valley'),
+('Olare Mara Kempinski', 'Rift Valley'),
+('Sarova Woodlands Hotel And Spa', 'Rift Valley'),
+('The Great Rift Valley Lodge And Golf Resort', 'Rift Valley'),
+('Sarova Mara Game Park', 'Rift Valley'),
+('Mara Intrepids Tented Camp', 'Rift Valley'),
+('Neptune Mara Rianta Luxury Camp', 'Rift Valley'),
+('Honeymoon Hut', 'Rift Valley'),
+('Entim Mara', 'Rift Valley'),
+('Desert Rose', 'Rift Valley'),
+('Andrews', 'Nairobi'),
+('Andrews', 'Nairobi');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `national_parks`
 --
 
@@ -259,17 +413,6 @@ INSERT INTO `national_parks` (`number`, `name`, `county`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `payment`
---
-
-CREATE TABLE `payment` (
-  `Email` varchar(100) NOT NULL,
-  `payment_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `places`
 --
 
@@ -301,6 +444,7 @@ INSERT INTO `places` (`number`, `region`, `county`) VALUES
 (13, 'Central Kenya', 'Nyahururu'),
 (16, 'Central Kenya', 'Nyandarua'),
 (12, 'Central Kenya', 'Sagana'),
+(21, 'Rift Valley', 'Samburu'),
 (6, 'Taita', 'Taita'),
 (20, 'Rift Valley', 'Turkana'),
 (8, 'Malindi', 'Watamu');
@@ -331,6 +475,55 @@ INSERT INTO `pswreset` (`pswResetId`, `pswResetEmail`, `pswResetSelector`, `pswR
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `reservations`
+--
+
+CREATE TABLE `reservations` (
+  `ReservationId` int(11) NOT NULL,
+  `HotelId` int(11) NOT NULL,
+  `Hotel` varchar(100) NOT NULL,
+  `Place` varchar(100) NOT NULL,
+  `Price` int(11) NOT NULL,
+  `Email` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `reservations`
+--
+
+INSERT INTO `reservations` (`ReservationId`, `HotelId`, `Hotel`, `Place`, `Price`, `Email`) VALUES
+(4, 7, 'Hemingways Nairobi', 'Nairobi', 39847, 'luna11@gmail.com'),
+(9, 8, 'Angama Mara', 'Rift Valley', 69270, 'joannekiara12@gmail.com'),
+(56, 1, 'Diani Sea Lodge', 'Diani', 0, 'luna11@gmail.com');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tickets`
+--
+
+CREATE TABLE `tickets` (
+  `TicketId` int(11) NOT NULL,
+  `FlightId` int(11) NOT NULL,
+  `Airline` varchar(100) NOT NULL,
+  `FromAirport` varchar(100) NOT NULL DEFAULT 'JKIA',
+  `ToAirport` varchar(100) NOT NULL DEFAULT 'MBA',
+  `Price` int(11) NOT NULL,
+  `Email` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tickets`
+--
+
+INSERT INTO `tickets` (`TicketId`, `FlightId`, `Airline`, `FromAirport`, `ToAirport`, `Price`, `Email`) VALUES
+(3, 16, 'Jambo Jet', 'JKIA', 'LAU', 22000, 'joannekiara12@gmail.com'),
+(4, 15, 'Jambo Jet', 'JKIA', 'LAU', 22000, 'joannekiara12@gmail.com'),
+(7, 14, 'Kenya Airways', 'JKIA', 'MBA', 22000, 'joannekiara12@gmail.com');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `user_reg`
 --
 
@@ -350,11 +543,11 @@ CREATE TABLE `user_reg` (
 
 INSERT INTO `user_reg` (`FirstName`, `LastName`, `Email`, `PhoneNumber`, `Pass`, `user_level`, `user_type`) VALUES
 ('Admin', 'Joanne', 'admin@gmail.com', '0022', '123', 1, 'admin'),
-('Hellen', 'Mwaura', 'hellenm@gmail.com', '0711111111', '$2y$10$oVRj6wRE/LSS7VVH2fDLLeDZoww8/jUvRK8xffG3Xej', 0, 'user'),
-('Wairimu', 'Kamiri', 'joannekiara12@gmail.com', '070000000', '$2y$10$AIepSSppjXvd0Y0axVHpUeGHBl3fBG/8UI7JZmm/mUw', 0, 'user'),
+('Wairimu', 'Kamiri', 'joannekiara12@gmail.com', '07123456', '$2y$10$xJlZGinwXBuI7YNBE8YseOz.ZqhxyfRvzBjztsggpTS', 0, 'user'),
 ('Luna', 'Gitari', 'luna@gmail.com', '12345', '$2y$10$9a0Tie7oM2xwnQGVaPQnZemQ.cPg4xm7POn/tVrfPMl', 0, 'user'),
 ('Pookie', 'Gitari', 'pooks@gmail.com', '0799999', '$2y$10$ahSwQaW2Ye4JGg4h.exwWefO8du2SB7EpOEVXeXJnbh', 0, 'user'),
-('Thamani', 'Thayu', 'tthayu@gmail.com', '000000', '$2y$10$U6pQ.YCBSjEK5VkvusZa5OWSUKs/Px9cAn2h7BR0aH.', 0, 'user');
+('Thamani ', 'Thayu', 'tthayu@gmail.com', '111000', 'joanne', 0, 'user'),
+('Imani', 'Wendo', 'wendo@gmail.com', '074567890', '$2y$10$KgE2OEJr4.dQmPAkrQCfOurSEZvv51UGgepZ9M7kof7', 0, 'user');
 
 --
 -- Indexes for dumped tables
@@ -374,6 +567,12 @@ ALTER TABLE `adventures`
   ADD PRIMARY KEY (`number`),
   ADD KEY `county` (`county`),
   ADD KEY `county_2` (`county`);
+
+--
+-- Indexes for table `airlines`
+--
+ALTER TABLE `airlines`
+  ADD PRIMARY KEY (`airlineId`);
 
 --
 -- Indexes for table `beaches`
@@ -404,12 +603,6 @@ ALTER TABLE `national_parks`
   ADD KEY `county` (`county`);
 
 --
--- Indexes for table `payment`
---
-ALTER TABLE `payment`
-  ADD PRIMARY KEY (`payment_id`);
-
---
 -- Indexes for table `places`
 --
 ALTER TABLE `places`
@@ -423,10 +616,28 @@ ALTER TABLE `pswreset`
   ADD PRIMARY KEY (`pswResetId`);
 
 --
+-- Indexes for table `reservations`
+--
+ALTER TABLE `reservations`
+  ADD PRIMARY KEY (`ReservationId`),
+  ADD KEY `HotelId` (`HotelId`),
+  ADD KEY `Email` (`Email`);
+
+--
+-- Indexes for table `tickets`
+--
+ALTER TABLE `tickets`
+  ADD PRIMARY KEY (`TicketId`),
+  ADD KEY `FlightId` (`FlightId`),
+  ADD KEY `Email` (`Email`);
+
+--
 -- Indexes for table `user_reg`
 --
 ALTER TABLE `user_reg`
-  ADD PRIMARY KEY (`Email`);
+  ADD PRIMARY KEY (`Email`),
+  ADD KEY `Email_2` (`Email`),
+  ADD KEY `Email_3` (`Email`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -436,13 +647,19 @@ ALTER TABLE `user_reg`
 -- AUTO_INCREMENT for table `accommodation`
 --
 ALTER TABLE `accommodation`
-  MODIFY `HotelId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `HotelId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `adventures`
 --
 ALTER TABLE `adventures`
   MODIFY `number` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+
+--
+-- AUTO_INCREMENT for table `airlines`
+--
+ALTER TABLE `airlines`
+  MODIFY `airlineId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `beaches`
@@ -454,7 +671,7 @@ ALTER TABLE `beaches`
 -- AUTO_INCREMENT for table `flights`
 --
 ALTER TABLE `flights`
-  MODIFY `FlightId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `FlightId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `historical_sites`
@@ -469,16 +686,10 @@ ALTER TABLE `national_parks`
   MODIFY `number` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
--- AUTO_INCREMENT for table `payment`
---
-ALTER TABLE `payment`
-  MODIFY `payment_id` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `places`
 --
 ALTER TABLE `places`
-  MODIFY `number` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `number` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `pswreset`

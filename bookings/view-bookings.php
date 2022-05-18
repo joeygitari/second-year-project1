@@ -241,7 +241,7 @@
                     <td>" . $row['Airline'] . "</td>
                     <td>" . $row['DepartureDate'] . "</td>
                     <td>".$total."</td>
-                    <td><button class='pay-button'><a href='view-payments.php?id=".$row['FlightId']."'>PAY</a></button></td>
+                    <td><button class='pay-button'><a href='view-payments.php?id1=".$row['FlightId']."'>PAY</a></button></td>
                   </tr>
                 </tbody>
               </table>";

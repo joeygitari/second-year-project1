@@ -7,6 +7,7 @@ function getParameterByName(name, url = window.location.href) {
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 var id = getParameterByName('id');
+var id1 = getParameterByName('id1');
 
 paypal.Buttons({
     style: {
@@ -26,7 +27,7 @@ paypal.Buttons({
         return actions.order.capture().then(function(details) {
             console.log(details)
             console.log(details.payer.email_address)
-            window.location.replace("http://localhost/project_ws/project1/payments/success.php?email=" + details.payer.email_address + "&id=" + details.id + "&hotelid=" + id)
+            window.location.replace("http://localhost/project_ws/project1/payments/success.php?email=" + details.payer.email_address + "&id=" + details.id + "&hotelid=" + id + "&flightid=" + id1)
         })
     },
     onCancel: function(data) {

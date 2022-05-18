@@ -159,42 +159,44 @@
     ?>
 
 <?php
-    // include '\xampp\htdocs\project_ws\project1\includes\dbh.inc.php';
-    // $email=$_GET['email'];
-    // $id=$_GET['id'];
-    // $flightid=$_GET['flightid'];
+    include '\xampp\htdocs\project_ws\project1\includes\dbh.inc.php';
+    $email=$_GET['email'];
+    $id=$_GET['id'];
+    $flightid=$_GET['flightid'];
 
 
-    // $emailuser = $_SESSION["email"];
+    $emailuser = $_SESSION["email"];
 
-    //     $sql1="SELECT FlightId, Airline, Price 
-    //     FROM tour_guide.flights
-    //     WHERE flights.Email='$emailuser' AND flights.FlightId='$flightid'";
-    //     var_dump($sql1);
-    //     $query_run = mysqli_query($conn,$sql1);
-    //     foreach($query_run AS $row){
+        $sql1="SELECT FlightId, Airline, FromAirport, ToAirport, Price 
+        FROM tour_guide.flights
+        WHERE flights.Email='$emailuser' AND flights.FlightId='$flightid';";
+        
+        $query_run = mysqli_query($conn,$sql1);
+        foreach($query_run AS $row){
             
-    //         $flightid=$row['FlightId'];
-    //         $airline=$row['Airline'];
-    //         $price=$row['Price'];
+            $flightid=$row['FlightId'];
+            $airline=$row['Airline'];
+            $from=$row['FromAirport'];
+            $to=$row['ToAirport'];
+            $price=$row['Price'];
 
-    //         $sql = "INSERT INTO tour_guide.tickets (TicketId, FlightId, Airline, Price, Email)
-    //         VALUES (?,?,?,?,?);";
-    //             $stmt = mysqli_stmt_init($conn);
-    //         if (!mysqli_stmt_prepare($stmt, $sql)){
-    //             exit();
-    //         }
+            $sql = "INSERT INTO tour_guide.tickets (TicketId, FlightId, Airline, FromAirport, ToAirport, Price, Email)
+            VALUES (?,?,?,?,?,?,?);";
+                $stmt = mysqli_stmt_init($conn);
+            if (!mysqli_stmt_prepare($stmt, $sql)){
+                exit();
+            }
 
-    //         mysqli_stmt_bind_param($stmt, "sssss", $id, $flightid, $airline, $price, $email);
-    //         mysqli_stmt_execute($stmt);
+            mysqli_stmt_bind_param($stmt, "sssssss", $id, $flightid, $airline, $from, $to, $price, $email);
+            mysqli_stmt_execute($stmt);
 
 
-    //         mysqli_stmt_close($stmt);
+            mysqli_stmt_close($stmt);
 
             
-    //     }
-    //     $sql2="DELETE FROM tour_guide.flights WHERE flights.FlightId='$flightid'";
-    //     mysqli_query($conn,$sql2);
+        }
+        $sql2="DELETE FROM tour_guide.flights WHERE flights.FlightId='$flightid'";
+        mysqli_query($conn,$sql2);
     ?>
 </body>
 </html>

@@ -31,7 +31,7 @@ $Email = $_POST['Email'];
 $sqli ="INSERT INTO tour_guide.flights (FromAirport, ToAirport, Airline, Seating, DepartureDate, ReturnDate, Fare, Tickets, Price, FullName, PhoneNumber, Email) VALUES ('$FromAirport', '$ToAirport', '$Airline', '$Seating', '$DepartureDate', '$ReturnDate', '$Fare', '$Tickets', '$Price', '$FullName', '$PhoneNumber', '$Email')";
 if ($con->query($sqli) === TRUE) {
     echo "New record created successfully";
-    // header("location: ../ticket.php");
+    header("location: ../profile.php");
 } else {
     echo "Error: " . $sqli . "<br>" . $con->error;
 }
