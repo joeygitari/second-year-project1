@@ -171,7 +171,7 @@
       <div class='tbl-header'>
       <table cellpadding='0' cellspacing='0' border='0'>
           <thead>
-          <p style="color:white;">YOUR MOST POPULAR DESTINATIONS</p>
+          <p style="color:white;">YOUR MOST POPULAR BOOKED DESTINATIONS</p>
             <tr>
               <th>Place</th>
               <th>Hotel</th>
@@ -190,7 +190,7 @@
               WHERE accommodation.Email='$emailuser'
               GROUP BY Place
               ORDER BY COUNT(*) DESC
-              LIMIT    1;";
+              LIMIT    3;";
 
           $query_run = mysqli_query($conn,$stmt);
           if(mysqli_num_rows($query_run)>0){
